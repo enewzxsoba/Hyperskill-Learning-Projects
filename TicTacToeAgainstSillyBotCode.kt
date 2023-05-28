@@ -32,10 +32,10 @@ fun greeting() {
 fun printField() {
     println(
         "--------- \n" +
-                "| ${cells[0]} ${cells[1]} ${cells[2]} | \n" +
-                "| ${cells[3]} ${cells[4]} ${cells[5]} | \n" +
-                "| ${cells[6]} ${cells[7]} ${cells[8]} | \n" +
-                "---------")
+        "| ${cells[0]} ${cells[1]} ${cells[2]} | \n" +
+        "| ${cells[3]} ${cells[4]} ${cells[5]} | \n" +
+        "| ${cells[6]} ${cells[7]} ${cells[8]} | \n" +
+        "---------")
 }
 
 fun guide() {
@@ -73,8 +73,8 @@ fun calibrateCords(input: MutableList<Int>): Int {
 fun boardCheck() {
     // winner check
     val winLines = " ${cells[0]}${cells[1]}${cells[2]} ${cells[3]}${cells[4]}${cells[5]} ${cells[6]}${cells[7]}${cells[8]} " +
-            " ${cells[0]}${cells[3]}${cells[6]} ${cells[1]}${cells[4]}${cells[7]} ${cells[2]}${cells[5]}${cells[8]} " +
-            " ${cells[0]}${cells[4]}${cells[8]} ${cells[2]}${cells[4]}${cells[6]}"
+                   " ${cells[0]}${cells[3]}${cells[6]} ${cells[1]}${cells[4]}${cells[7]} ${cells[2]}${cells[5]}${cells[8]} " +
+                   " ${cells[0]}${cells[4]}${cells[8]} ${cells[2]}${cells[4]}${cells[6]}"
     val winX = winLines.contains("XXX")
     val winO = winLines.contains("000")
     // count check
